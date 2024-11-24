@@ -1,0 +1,34 @@
+#banner_principal {
+    border: 5px solid black;
+    margin: 5px; 
+  }
+
+  #jogos {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 10px;
+    border: 6px solid black;
+    background-color: rgba(179, 172, 192, 0.803);
+    
+  }
+
+ .btn:hover {
+    border: 2px solid rgb(134, 126, 126);
+    box-shadow: rgb(97, 95, 95) 0px 0px 12px 1px inset,0px 0px 12px 1px;
+    border-radius: 15px;
+
+ }
+
+ .btn {
+    margin-left: 4em;
+ }
+
+  h2 {
+    text-align: center;
+    margin: 1em;
+    
+  }
