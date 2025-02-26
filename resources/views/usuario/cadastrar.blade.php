@@ -3,7 +3,8 @@
 @section('content')
 <link rel="stylesheet" href="/css/cadastrar.css">
 <body>
-    <form id="formulario">
+    <form id="formulario" method="POST">
+        @csrf
             <div>
                 <h1 id="titulo">Cadastro de Usuários</h1>
                 <br>
@@ -58,6 +59,18 @@
                 <div class="campo" id="data-nascimento">
                     <label for="nascimento"><strong>Data de nascimento</strong></label>
                     <input type="date" name="nascimento" id="nascimento">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="campo">
+                    <label for="senha"><strong>Senha</strong></label>
+                    <input type="password" name="password" id="senha">
+                </div>
+
+                <div class="campo">
+                    <label id='confirmsenha' for="confirmsenha"><strong>Confirmar senha</strong></label>
+                    <input type="password" name="passwordcomf" id="confirmasenha">
                 </div>
             </fieldset>
 

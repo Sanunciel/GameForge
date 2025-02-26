@@ -25,7 +25,7 @@ input, select, button{
     display: block;
 }
 
-.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo select{
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo input[type='password'], .campo select{
     padding: 0.2em;
     border: 1px solid rgb(72, 72, 75);
     box-shadow: 2px 2px 2px rgb(72, 72, 75);
@@ -72,5 +72,13 @@ input, select, button{
 
 #data-nascimento{
     margin-left: 8em;
+}
+
+fieldset{
+    display: flex;
+}
+
+#confirmasenha, #confirmsenha{
+    margin-left: 4em;
 }
 
