@@ -27,18 +27,10 @@
                     <a class="nav-link active" aria-current="page" href="/games"><strong>Jogos</strong></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/cadastroUser"><strong>Cadastre-se</strong></a>
+                    <a class="nav-link" href="/login"><strong>Login</strong></a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <strong>Dropdown</strong>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/addgame"><strong>Cadastrar Jogo</strong></a>
                   </li>
                 </ul>
               </div>
@@ -47,6 +39,9 @@
             
         </header>
         <div id="conteudo">
+          @if(session('msg'))
+            <p class="msg">{{ session('msg') }}</p> 
+          @endif
           @yield('content')
         </div>
         <footer>

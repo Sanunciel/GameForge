@@ -17,7 +17,7 @@
                 </div>
     
                 <div class="campo">
-                    <label for="nascimento"><strong>CPF</strong></label>
+                    <label for="cpf"><strong>CPF</strong></label>
                     <input type="text" name="cpf" id="cpf" required>
                 </div>
             </fieldset>
@@ -74,7 +74,7 @@
                 </div>
             </fieldset>
 
-            <button id="botao" type="submit">Concluído</button>
+            <button id="botao" type="submit">Cadastrar</button>
                 
     </form>
 </body>

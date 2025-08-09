@@ -1,0 +1,52 @@
+#titulo{
+    color: rgb(72, 72, 75);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#main{
+    background-color: rgb(255, 255, 255);
+    font-size: 1em;
+    color: rgb(72, 72, 75);
+    text-align: center;
+}
+
+#addjogo{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+#nomejogo, #desc, #price, #img{
+    width: 300px;
+    margin: 0.3em;
+}
+
+input[type='text'], input[type='textarea']{
+    padding: 0.2em;
+    border: 1px solid rgb(72, 72, 75);
+    box-shadow: 2px 2px 2px rgb(72, 72, 75);
+    
+}
+
+input, button{
+    border-radius: 5px;
+}
+
+button{
+    background-color: rgb(74, 74, 80);   
+    font-size: 1.2em;
+    border: 0;
+    margin: 1em;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgb(91, 91, 94);
+    color: rgb(210, 203, 203);
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+button:hover{
+    background-color: rgb(112, 112, 115);
+}

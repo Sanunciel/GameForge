@@ -11,4 +11,16 @@ class GameController extends Controller
         $games = Game::all();
         return view('game.exibir', ['games' => $games]);
     }
+
+    public function cadastrar(Request $request){
+        $game = new Game();
+
+        $game->nome = $request->nomejogo;
+        $game->descricao = $request->descricao;
+        $game->price = $request->price;
+        
+        $game->save();
+
+        return redirect('/')->with('msg', 'Jogo cadastrado com sucesso!');
+    }
 }

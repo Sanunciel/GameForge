@@ -7,11 +7,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/login', function () {
+    return view('usuario.login');
+});
 
-Route::get('/cadastroUser', function () {
+Route::get('/cadastro', function () {
     return view('usuario.cadastrar');
 });
 
-Route::post('/cadastroUser', [UserController::class, 'cadastrar']);
+Route::get('/addgame', function () {
+    return view('game.cadastrar');
+});
+
+Route::post('/cadastro', [UserController::class, 'cadastrar']);
 
 Route::get('/games', [GameController::class, 'exibirGames']);
+
+Route::post('/addgame', [GameController::class, 'cadastrar']);

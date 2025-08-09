@@ -22,6 +22,6 @@ class UserController extends Controller
 
         $user->save();
 
-        return redirect('/');
+        return redirect('/login')->with('msg', 'Usuario cadastrado com sucesso!');
     }
 }
